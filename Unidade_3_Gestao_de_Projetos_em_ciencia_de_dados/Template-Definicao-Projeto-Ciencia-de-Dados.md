@@ -10,14 +10,14 @@
 
 | Campo | Preenchimento |
 |---|---|
-| Título provisório do projeto | |
-| Curso / disciplina | |
-| Turma | |
-| Equipe | |
+| Título provisório do projeto | Cursos Web |
+| Curso / disciplina | Ciência de Dados e Aprendizagem de Maquinas |
+| Turma | Sistemas de informação |
+| Equipe | Lucas Dias Fortes de Andrade |
 | Integrantes e funções iniciais | |
-| Professor(a) | |
-| Data de elaboração | |
-| Versão do documento | |
+| Professor(a) | Kadidja Valeria |
+| Data de elaboração | 16/09/26 |
+| Versão do documento | 1 |
 
 ## 2. Visão geral
 
@@ -26,7 +26,7 @@
 Em até 100 palavras, apresente o problema, o público-alvo, a proposta de análise e o resultado esperado.
 
 **Preenchimento:**
-
+Desenvolvimento de um site web de cursos online, houve um aumento de mais de 300% de estudante cursando cursos online desde 2019, o Brasil é um dos países que mais busca por formação EAD, o publico alvo são estudantes e professores, muitos das plataformas web de cursos não mantem um contato dos professores com o estudantes, permitindo o estudante não tirar duvidas diretamente com eles e eles tambem não sabem como melhorar suas diciplinas sem um contato ou avaliação do estudante, espero criar uma plataforma que aproxime o estudante do professor, e que registre as suas conclusões e avaliações.
 ________________________________________________________________________________
 
 ________________________________________________________________________________
