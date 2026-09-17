@@ -17,7 +17,7 @@
 | Integrantes e funções iniciais | |
 | Professor(a) | Kadidja Valeria |
 | Data de elaboração | 16/09/26 |
-| Versão do documento | 1 |
+| Versão do documento | 16 |
 
 ## 2. Visão geral
 
