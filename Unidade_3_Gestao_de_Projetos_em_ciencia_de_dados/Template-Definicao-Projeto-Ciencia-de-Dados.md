@@ -33,7 +33,7 @@ ________________________________________________________________________________
 
 ### 2.2 Declaração do projeto em uma frase
 
-> Nosso projeto utilizará **[dados ou fonte]** para compreender/prever **[fenômeno]**, apoiando **[público ou organização]** na decisão de **[decisão ou ação]**.
+> Nosso projeto utilizará dados de participação, avaliações, dúvidas e conclusão dos cursos para compreender o comportamento e as dificuldades dos estudantes em cursos online, apoiando estudantes e professores na decisão de melhorar a experiência de aprendizagem e identificar pontos dos cursos que precisam de atenção.
 
 **Versão da equipe:**
 
@@ -51,7 +51,9 @@ Descreva a situação atual, o ambiente em que o problema ocorre e as evidência
 - Por que é importante investigá-lo agora?
 
 **Preenchimento:**
-
+Ocorre nos ensinos EAD, e cursos online.
+Os afetados são os alunos e professores que pode ser limitada a identificação das principais duvidas.
+A utilização de dados de acesso, conclusão, avaliações, dúvidas e interação pode fornecer informações para compreender melhor a experiência dos estudantes. Por isso, o projeto investigará esses dados e buscará transformá-los em informações úteis para professores e responsáveis pelos cursos.
 ________________________________________________________________________________
 
 ________________________________________________________________________________
@@ -63,7 +65,7 @@ Formule o problema de maneira específica, sem antecipar uma solução.
 > **Modelo:** [Público/organização] enfrenta [problema observável] no contexto de [situação], produzindo [consequência ou impacto].
 
 **Problema definido:**
-
+Estudantes e professores de cursos online enfrentam dificuldades para identificar e acompanhar as principais dúvidas, dificuldades e níveis de satisfação dos estudantes durante os cursos, produzindo pouca informação estruturada para orientar melhorias no conteúdo e na experiência de aprendizagem.
 ________________________________________________________________________________
 
 ### 3.3 Evidências iniciais
@@ -80,10 +82,10 @@ ________________________________________________________________________________
 
 | Aspecto | Descrição |
 |---|---|
-| Quem são os usuários ou beneficiários? | |
-| Quais necessidades possuem? | |
-| Como são afetados pelo problema? | |
-| Que decisão ou ação poderão tomar com os resultados? | |
+| Quem são os usuários ou beneficiários? |	Estudantes e professores que utilizam cursos online |
+| Quais necessidades possuem? |	Estudantes precisam acessar conteúdos, tirar dúvidas, acompanhar seu progresso e avaliar os cursos. Professores precisam acompanhar a participação, identificar dificuldades e receber feedback sobre suas disciplinas |
+| Como são afetados pelo problema? |	Estudantes podem ter dificuldades para esclarecer dúvidas e registrar sua experiência. Professores podem não possuir informações suficientes para identificar os pontos que precisam ser melhorados |
+| Que decisão ou ação poderão tomar com os resultados? |Estudantes poderão identificar seu progresso e pontos de dificuldade. Professores poderão utilizar os dados para identificar conteúdos com maior número de dúvidas, menores avaliações ou maior abandono |
 
 ### 4.2 Partes interessadas
 
