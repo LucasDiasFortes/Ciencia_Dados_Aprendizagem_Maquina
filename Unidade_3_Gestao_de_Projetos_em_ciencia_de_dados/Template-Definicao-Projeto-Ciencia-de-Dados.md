@@ -161,32 +161,32 @@ Registre suposições que serão investigadas, sem apresentá-las como conclusõ
 
 ### 8.1 Avaliação inicial dos dados
 
-- **Disponibilidade:** __________________________________________________________
-- **Volume e período coberto:** __________________________________________________
-- **Dados ausentes, duplicados ou inconsistentes previstos:** ______________________
+- **Disponibilidade:** Os dados deverão ser gerados durante a utilização da plataforma e a conclusão das disciplinas. __________________________________________________________
+- **Volume e período coberto:** O volume dependerá da quantidade de estudantes e interações registradas. __________________________________________________
+- **Dados ausentes, duplicados ou inconsistentes previstos:** Poderão ocorrer avaliações sem comentários, registros duplicados e usuários sem conclusão, ______________________
 - **Necessidade de integração entre fontes:** _____________________________________
 - **Restrições legais, contratuais ou institucionais:** _____________________________
 
 ### 8.2 Privacidade, ética e segurança
 
-- [ ] A equipe verificou se há dados pessoais ou sensíveis.
-- [ ] A coleta e o uso dos dados possuem finalidade legítima e explícita.
-- [ ] O acesso será limitado às pessoas autorizadas.
-- [ ] Dados pessoais serão minimizados, anonimizados ou pseudonimizados quando necessário.
-- [ ] Possíveis vieses e impactos sobre grupos serão analisados.
-- [ ] A divulgação dos resultados evitará reidentificação ou exposição indevida.
+- [ X ] A equipe verificou se há dados pessoais ou sensíveis.
+- [ X ] A coleta e o uso dos dados possuem finalidade legítima e explícita.
+- [ X ] O acesso será limitado às pessoas autorizadas.
+- [ X ] Dados pessoais serão minimizados, anonimizados ou pseudonimizados quando necessário.
+- [ X ] Possíveis vieses e impactos sobre grupos serão analisados.
+- [ X ] A divulgação dos resultados evitará reidentificação ou exposição indevida.
 
 **Cuidados específicos deste projeto:**
-
+ Os dados utilizados para análise deverão ser minimizados, evitando o armazenamento de informações pessoais desnecessárias. Os estudantes deverão ser identificados por códigos, evitando a exposição de nomes nos conjuntos utilizados para análise. Comentários e dúvidas deverão ser tratados de maneira que não permitam a identificação indevida dos estudantes.
 ________________________________________________________________________________
 
 ## 9. Escopo do projeto
 
 | Dentro do escopo | Fora do escopo |
 |---|---|
-| | |
-| | |
-| | |
+| Cadastro e organização de cursos | Produção de cursos em grande escala |
+| Registro de estudantes e progresso | Sistema completo de pagamento |
+| Registro de dúvidas e avaliações | Certificação profissional oficial |
 
 **Restrições conhecidas:** tempo, acesso a dados, ferramentas, infraestrutura, conhecimento técnico ou normas.
 
@@ -196,10 +196,10 @@ ________________________________________________________________________________
 
 | Entregável | Descrição | Formato | Responsável | Critério de aceite |
 |---|---|---|---|---|
-| Base tratada | | | | |
-| Análise exploratória | | | | |
-| Visualizações / painel | | | | |
-| Relatório ou apresentação | | | | |
+| Base tratada | 	Dados estruturados de cursos, participação, avaliações e dúvidas | Banco de dados | Lucas Dias | Dados organizados, sem duplicidades relevantes e com documentação |
+| Análise exploratória | Análise estatística dos principais indicadores | relatório | Lucas Dias | Indicadores calculados e interpretações documentadas |
+| Visualizações / painel | 	Gráficos sobre participação, conclusão, dúvidas e avaliações | página web | Lucas Dias | 	Gráficos funcionais e compreensíveis |
+| Plataforma web  | Protótipo funcional para utilização dos cursos | Aplicação web | Lucas Dias | Usuário consegue acessar curso, registrar progresso, dúvida e avaliação |
 | Outro | | | | |
 
 ## 11. Critérios de sucesso
@@ -208,36 +208,36 @@ Defina como a equipe saberá se o projeto alcançou seus objetivos.
 
 | Critério | Indicador ou evidência | Meta | Forma de verificação |
 |---|---|---|---|
-| Relevância para o problema | | | |
-| Qualidade dos dados | | | |
-| Qualidade da análise | | | |
-| Utilidade para o público-alvo | | | |
-| Comunicação dos resultados | | | |
+| Relevância para o problema | Funcionalidades relacionadas ao problema central | Todos os recursos principais devem estar relacionados à interação e análise dos estudantes | Avaliação do protótipo e documentação |
+| Qualidade dos dados | Percentual de registros válidos | Pelo menos 90% dos registros utilizados na análise devem estar válidos após o tratamento | Verificação da base |
+| Qualidade da análise | Quantidade de indicadores analisados | Pelo menos 5 indicadores relevantes | Notebook ou relatório |
+| Utilidade para o público-alvo | 	Informações que auxiliem professores e estudantes | 	Informações que auxiliem professores e estudantes	Painel contendo indicadores de participação, dúvidas, avaliações e conclusão | Demonstração da plataforma |
+| Comunicação dos resultados | 	Clareza do relatório e das visualizações | 	Todos os principais resultados devem possuir explicação e visualização adequada | Avaliação do relatório/apresentação |
 
 ## 12. Plano inicial de trabalho
 
 | Etapa | Atividades principais | Responsável(is) | Prazo | Dependências |
 |---|---|---|---|---|
-| 1. Definição | | | | |
-| 2. Obtenção dos dados | | | | |
-| 3. Preparação dos dados | | | | |
-| 4. Análise / modelagem | | | | |
-| 5. Validação | | | | |
-| 6. Comunicação | | | | |
+| 1. Definição | Refinar problema, objetivos, perguntas de negócio e escopo | Lucas Dias | novembro|  nenhum|
+| 2. Obtenção dos dados | Criar estrutura do banco e gerar/coletar dados de teste | Lucas Dias | novembro | nenhum |
+| 3. Preparação dos dados | 	Limpeza, organização, tratamento de ausências e integração | Lucas Dias | novembro  | 	Dados disponíveis |
+| 4. Análise / modelagem | Análise exploratória, criação de indicadores e identificação de padrões | Lucas Dias | novembro | Base tratada |
+| 5. Validação | 	Verificar resultados, indicadores e funcionamento da plataforma | Lucas Dias | novembro | Plataforma e análises |
+| 6. Comunicação | 	Produzir relatório, apresentação e demonstração do projeto | Lucas Dias | novembro | 	Resultados validados |
 
 ## 13. Riscos do projeto
 
 | Risco | Probabilidade | Impacto | Estratégia de resposta | Responsável |
 |---|---|---|---|---|
-| | Baixa / Média / Alta | Baixo / Médio / Alto | | |
-| | Baixa / Média / Alta | Baixo / Médio / Alto | | |
-| | Baixa / Média / Alta | Baixo / Médio / Alto | | |
+| Quantidade insuficiente de dados reais| Alta |  Alto | 	Utilizar dados simulados para complementar os testes e deixar essa limitação explícita | 	Lucas Dias |
+| Atraso no desenvolvimento da plataforma |Média |  Alto | Priorizar funcionalidades essenciais e reduzir funcionalidades secundárias | Lucas Dias |
+| Dados inconsistentes ou incompletos |  Média | Médio| Criar procedimentos de limpeza e validação dos dados | Lucas Dias |
 
 ## 14. Organização da equipe
 
 | Integrante | Papel principal | Responsabilidades | Apoio necessário |
 |---|---|---|---|
-| | | | |
+| Lucas Dias Fortes de Andrade | Desenvolvedor e analista de dados | Desenvolvimento da plataforma, banco de dados, documentação e apresentação | Orientação do professor |
 | | | | |
 | | | | |
 | | | | |
@@ -246,15 +246,15 @@ Defina como a equipe saberá se o projeto alcançou seus objetivos.
 
 Antes da entrega, confirme:
 
-- [ ] O problema é real, relevante e delimitado.
-- [ ] O público-alvo e as partes interessadas estão identificados.
-- [ ] O objetivo geral e os objetivos específicos são coerentes.
-- [ ] As perguntas de negócio orientam decisões concretas.
-- [ ] Há dados potencialmente disponíveis para responder às perguntas.
-- [ ] O escopo é compatível com o prazo e os recursos.
-- [ ] Os critérios de sucesso são mensuráveis.
-- [ ] Riscos, privacidade, ética e segurança foram considerados.
-- [ ] Funções e responsabilidades foram distribuídas.
+- [ X ] O problema é real, relevante e delimitado.
+- [ X ] O público-alvo e as partes interessadas estão identificados.
+- [ X ] O objetivo geral e os objetivos específicos são coerentes.
+- [ X ] As perguntas de negócio orientam decisões concretas.
+- [ X ] Há dados potencialmente disponíveis para responder às perguntas.
+- [ X ] O escopo é compatível com o prazo e os recursos.
+- [ X ] Os critérios de sucesso são mensuráveis.
+- [ X ] Riscos, privacidade, ética e segurança foram considerados.
+- [ X ] Funções e responsabilidades foram distribuídas.
 
 ## 16. Aprovação e registro de ajustes
 
