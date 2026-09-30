@@ -91,9 +91,9 @@ ________________________________________________________________________________
 
 | Parte interessada | Interesse no projeto | Influência | Forma de envolvimento |
 |---|---|---|---|
-| | | Baixa / Média / Alta | |
-| | | Baixa / Média / Alta | |
-| | | Baixa / Média / Alta | |
+| Estudantes |Utilizar os cursos, tirar dúvidas e avaliar conteúdos | Alta | procurar o professor e avaliar a disciplina |
+|Professores |Acompanhar estudantes e melhorar os cursos |  Alta | Acompanhar o progresso do aluno e disponibilizar contato |
+| Administrador da plataforma|	Gerenciar usuários, cursos e dados |Média| realizar uma plataforma que permita disponibilizar o contatos entre o professor e o estudante além de disponibilizar meios que o aluno possa avaliar e o professor acompanhar |
 
 ## 5. Objetivos do projeto
 
@@ -102,6 +102,7 @@ ________________________________________________________________________________
 Escreva um objetivo que indique o que será analisado, para qual finalidade e em qual contexto. Inicie com um verbo no infinitivo.
 
 **Objetivo geral:**
+Desenvolver e analisar uma plataforma web de cursos online capaz de registrar dados de participação, avaliações, dúvidas e conclusão dos estudantes, utilizando técnicas de Ciência de Dados para identificar padrões de comportamento e informações que possam apoiar melhorias na experiência de aprendizagem.
 
 ________________________________________________________________________________
 
@@ -111,21 +112,22 @@ Defina de três a cinco objetivos mensuráveis e compatíveis com o prazo do pro
 
 | Nº | Objetivo específico | Evidência de conclusão |
 |---:|---|---|
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
+| 1 |Desenvolver uma estrutura básica para cadastro e disponibilização de cursos online | Plataforma com cadastro de cursos e acesso aos conteúdos|
+| 2 |	Implementar mecanismos para registro de dúvidas, avaliações e progresso dos estudantes | Funcionalidades implementadas e dados armazenados|
+| 3 |Organizar e tratar os dados coletados pela plataforma | Base de dados estruturada, limpa e documentada |
+| 4 |Analisar padrões de participação, conclusão, avaliações e dúvidas dos estudantes | Análises estatísticas e visualizações |
+| 5 |	Desenvolver indicadores que auxiliem professores a identificar pontos de atenção nos cursos | Painel ou conjunto de indicadores e relatório de resultados
+ |
 
 ### 5.3 Verificação dos objetivos
 
 Marque após revisar:
 
-- [ ] São específicos e escritos com clareza.
-- [ ] Podem ser verificados por meio de entregáveis ou métricas.
-- [ ] São viáveis com os dados, recursos e tempo disponíveis.
-- [ ] Estão diretamente relacionados ao problema central.
-- [ ] Consideram os usuários e a decisão que será apoiada.
+- [ X ] São específicos e escritos com clareza.
+- [ X ] Podem ser verificados por meio de entregáveis ou métricas.
+- [ X ] São viáveis com os dados, recursos e tempo disponíveis.
+- [ X ] Estão diretamente relacionados ao problema central.
+- [ X ] Consideram os usuários e a decisão que será apoiada.
 
 ## 6. Perguntas de negócio
 
@@ -133,9 +135,9 @@ As perguntas de negócio orientam a coleta, a análise e a comunicação dos res
 
 | Nº | Pergunta de negócio | Decisão apoiada | Dados necessários | Análise ou indicador possível |
 |---:|---|---|---|---|
-| 1 | | | | |
-| 2 | | | | |
-| 3 | | | | |
+| 1 | 	Quais cursos ou conteúdos apresentam maior quantidade de dúvidas dos estudantes? | 	Identificar conteúdos que precisam de revisão ou maior suporte| Curso, conteúdo, dúvida, data e categoria | 	Quantidade de dúvidas por curso/conteúdo |
+| 2 | Quais cursos apresentam maiores taxas de conclusão e abandono? | 	Identificar cursos que podem exigir mudanças na estrutura ou conteúdo | Matrícula, acesso, progresso e conclusão | Taxa de conclusão e abandono |
+| 3 | Em quais momentos do curso os estudantes apresentam maior dificuldade?| 	Definir momentos que precisam de maior acompanhamento | Conteúdo, progresso, dúvidas e avaliações | Dúvidas por etapa ou percentual de conclusão |
 | 4 | | | | |
 | 5 | | | | |
 
@@ -145,17 +147,17 @@ Registre suposições que serão investigadas, sem apresentá-las como conclusõ
 
 | Hipótese | Como poderá ser testada? | Resultado que a refutaria? |
 |---|---|---|
-| H1. | | |
-| H2. | | |
-| H3. | | |
+| H1. Conteúdos com maior quantidade de dúvidas podem apresentar menores avaliações médias | Comparar quantidade de dúvidas e avaliações por conteúdo | Não existir relação ou os conteúdos com mais dúvidas apresentarem avaliações semelhantes ou maiores |
+| H2. Estudantes com maior participação na plataforma podem apresentar maior taxa de conclusão | Comparar atividades/interações com a situação de conclusão dos estudantes | As taxas de conclusão serem semelhantes ou menores entre estudantes mais participativos |
+| H3. Algumas etapas específicas dos cursos podem concentrar maior quantidade de dificuldades | Agrupar dúvidas e avaliações de acordo com a etapa/progresso do curso | 	As dúvidas estarem distribuídas de maneira aproximadamente uniforme |
 
 ## 8. Dados necessários e viabilidade
 
 | Conjunto ou fonte de dados | Variáveis principais | Formato | Acesso / responsável | Qualidade esperada |
 |---|---|---|---|---|
-| | | | | |
-| | | | | |
-| | | | | |
+| Cadastro de cursos | 	ID do curso, título, categoria, professor, quantidade de conteúdos | Banco de dados | Plataforma / equipe | Alta |
+| Participação dos estudantes | ID do estudante, curso, acessos, atividades, progresso, datas | Banco de dados | 	Plataforma / equipe | Alta |
+| Avaliações | ID do estudante, curso, nota, comentário, data | 	Banco de dados | Plataforma / equipe | 	Média |
 
 ### 8.1 Avaliação inicial dos dados
 
