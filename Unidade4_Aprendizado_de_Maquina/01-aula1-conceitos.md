@@ -7,10 +7,10 @@ Ciência de Dados e Aprendizado de Máquina · Sistemas de Informação · 2026.
 
 ## Identificação
 
-- Estudante ou equipe: **PREENCHER**
-- Turma: **PREENCHER**
-- Data de realização: **PREENCHER**
-- Integrantes e contribuições (se em equipe): **PREENCHER**
+- Estudante ou equipe: Lucas Dias Fortes de Andrade
+- Turma: Ciência de Dados e Aprendizagem de Máquina
+- Data de realização: 21/10/2026
+- Integrantes e contribuições (se em equipe): Lucas Dias
 
 ## Objetivos
 
@@ -18,22 +18,22 @@ Distinguir programação tradicional e Machine Learning, identificar atributos e
 
 ## 1. Explicação com suas palavras
 
-1. Como um modelo aprende com dados? **PREENCHER**
-2. Qual diferença entre algoritmo e modelo? **PREENCHER**
-3. Compare uma regra de bloqueio de palavra com um modelo de spam. **PREENCHER**
-4. Dê um exemplo de atributo e alvo e defina o momento da previsão. **PREENCHER**
+1. Como um modelo aprende com dados? Um modelo aprende analisando exemplos e identificando padrões nos dados durante o treinamento. Depois, usa esses padrões para fazer previsões ou tomar decisões sobre novos dados.
+2. Qual diferença entre algoritmo e modelo? Um modelo aprende analisando exemplos e identificando padrões nos dados durante o treinamento. Depois, usa esses padrões para fazer previsões ou tomar decisões sobre novos dados.
+3. Compare uma regra de bloqueio de palavra com um modelo de spam. Uma regra de bloqueio identifica palavras específicas e bloqueia mensagens que as contêm. Já um modelo de spam aprende com exemplos de mensagens para identificar padrões e classificar novas mensagens como spam ou não spam.
+4. Dê um exemplo de atributo e alvo e defina o momento da previsão. para prever o preço de uma casa, os atributos podem ser o tamanho, a localização e o número de quartos. O alvo é o preço da casa. A previsão acontece quando o modelo recebe os atributos de uma casa nova e estima seu preço.
 
 ## 2. Quadro comparativo
 
 | Critério | Supervisionado | Não supervisionado |
 | --- | --- | --- |
-| Presença de alvo no treino | PREENCHER | PREENCHER |
-| Pergunta que pode responder | PREENCHER | PREENCHER |
-| Tipo de saída | PREENCHER | PREENCHER |
-| Tarefas e exemplo | PREENCHER | PREENCHER |
-| Dados necessários | PREENCHER | PREENCHER |
-| Forma de avaliação | PREENCHER | PREENCHER |
-| Limitação | PREENCHER | PREENCHER |
+| Presença de alvo no treino | os dados possuem alvo conhecido | os dados não possuem alvo definido |
+| Pergunta que pode responder | Qual será o resultado? | Quais padrões existem nos dados? |
+| Tipo de saída | Classe ou valor numérico | Grupos, padrões ou relações entre dados |
+| Tarefas e exemplo | Classificação: identificar e-mails como spam ou não spam | Agrupamento: separar clientes em grupos com características semelhantes |
+| Dados necessários | Dados de entrada com respostas corretas conhecidas | Dados de entrada sem rótulos ou respostas previamente definidas |
+| Forma de avaliação | Comparar as previsões com os resultados reais, usando métricas como acurácia ou erro médio | Avaliar a qualidade dos grupos, sua separação e sua coerência |
+| Limitação | Depende de dados rotulados, que podem ser caros ou difíceis de obter | Os grupos encontrados podem ser difíceis de interpretar e não representar categorias úteis |
 
 ## 3. Situações-problema
 
@@ -52,7 +52,7 @@ Os casos são cenários didáticos. Escolha **pelo menos cinco** e justifique su
 
 | Caso escolhido | Alvo ou ausência de alvo | Categoria, quantidade ou grupos? | Abordagem e justificativa | Dados necessários e limitação |
 | --- | --- | --- | --- | --- |
-| PREENCHER | PREENCHER | PREENCHER | PREENCHER | PREENCHER |
+| Educação | Alvo | Categoria | Supervisionado — classificação, pois aprende com históricos de alunos cujo resultado já é conhecido. | Históricos rotulados de alunos. A qualidade depende dos dados e pode haver mudanças no perfil dos estudantes. |
 | PREENCHER | PREENCHER | PREENCHER | PREENCHER | PREENCHER |
 | PREENCHER | PREENCHER | PREENCHER | PREENCHER | PREENCHER |
 | PREENCHER | PREENCHER | PREENCHER | PREENCHER | PREENCHER |
