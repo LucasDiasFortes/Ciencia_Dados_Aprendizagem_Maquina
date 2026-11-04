@@ -72,9 +72,9 @@ ________________________________________________________________________________
 
 | Evidência | Fonte | O que ela indica? | Confiabilidade / limitação |
 |---|---|---|---|
-| 1. | | | |
-| 2. | | | |
-| 3. | | | |
+| 1. Aumento da procura por cursos online e ensino a distância desde 2019. | Dados e pesquisas sobre educação a distância no Brasil, como o Censo da Educação Superior do INEP. | Indica o crescimento da utilização de plataformas de ensino online e a importância de melhorar a experiência dos estudantes. | Fonte institucional confiável, mas os dados gerais não representam necessariamente todos os cursos online. |
+| 2. Dificuldade dos estudantes em esclarecer dúvidas durante os cursos. |Limites e Potencialidades dos cursos UAB: As perspectivas dos estudantes do Polo UAB/Bertioga | Indica a necessidade de melhorar a comunicação entre estudantes e professores. | Depende da coleta de relatos e pode apresentar opiniões individuais. |
+| 3. Falta de informações organizadas sobre dificuldades e satisfação dos estudantes. | Registros de participação, avaliações e dúvidas disponíveis nas plataformas de cursos online. | Indica que os dados podem ajudar os professores a identificar conteúdos que precisam de melhorias. | A confiabilidade depende da quantidade, qualidade e atualização dos registros. |
 
 ## 4. Público-alvo e partes interessadas
 
