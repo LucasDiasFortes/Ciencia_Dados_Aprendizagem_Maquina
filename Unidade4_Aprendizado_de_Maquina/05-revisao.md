@@ -7,9 +7,9 @@ Ciência de Dados e Aprendizado de Máquina · Sistemas de Informação · 2026.
 
 ## Identificação
 
-- Estudante ou equipe: **PREENCHER**
-- Turma: **PREENCHER**
-- Data de realização: **PREENCHER**
+- Estudante ou equipe: **Lucas Dias Fortes de Andrade**
+- Turma: **Sistemas de informação**
+- Data de realização: **04/11/26**
 - Integrantes e contribuições (se em equipe): **PREENCHER**
 
 Responda com suas palavras e apresente os cálculos quando solicitados. Os números dos exercícios manuais não são os resultados do laboratório.
