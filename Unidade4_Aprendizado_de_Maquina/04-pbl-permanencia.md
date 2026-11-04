@@ -37,8 +37,7 @@ Uma instituição quer compreender sinais associados à evasão e oferecer apoio
 | --- | --- | --- | --- | --- |
 | Frequencia | Atributo | Durante as primeiras quatro semanas do semestre | Sistema acadêmico ou diário de classe | Identificar a participação dos estudantes. Pode não representar totalmente o interesse ou aprendizado. |
 | Nota | Atributo | Após as primeiras avaliações |Sistema de notas da instituição| Identificar dificuldades no desempenho acadêmico. Notas baixas podem ter diferentes causas. |
-| Entrega | Atributo | 	
-Durante as primeiras quatro semanas do semestre | Plataforma de ensino ou ambiente virtual | Verificar a realização das atividades. Atrasos podem ocorrer por motivos pessoais ou técnicos. |
+| Entrega | Atributo | 	Durante as primeiras quatro semanas do semestre | Plataforma de ensino ou ambiente virtual | Verificar a realização das atividades. Atrasos podem ocorrer por motivos pessoais ou técnicos. |
 | Evasão | Alvo | No final do semestre | Sistema acadêmico | Identificar se o estudante abandonou o curso. |
 
 
