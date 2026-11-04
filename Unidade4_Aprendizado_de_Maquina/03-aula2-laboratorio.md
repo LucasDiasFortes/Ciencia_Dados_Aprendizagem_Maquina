@@ -7,7 +7,7 @@ Ciência de Dados e Aprendizado de Máquina · Sistemas de Informação · 2026.
 
 ## Identificação
 
-- Estudante ou equipe: **PREENCHER**
+- Estudante ou equipe: **Lucas Dias Fortes de Andrade**
 - Turma: **PREENCHER**
 - Data de realização: **PREENCHER**
 - Integrantes e contribuições (se em equipe): **PREENCHER**
