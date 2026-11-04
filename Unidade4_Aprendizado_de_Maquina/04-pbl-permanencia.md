@@ -42,34 +42,35 @@ Uma instituição quer compreender sinais associados à evasão e oferecer apoio
 
 
 
-Diferencie dados usados na simulação e dados que seriam necessários para uma investigação real: **Na simulação**
+Diferencie dados usados na simulação e dados que seriam necessários para uma investigação real: **Na simulação foi utilizado 3 atributos e 1 alvo, eles são: frequência, nota e entrega de atividades como atributos, e evasão como alvo. Esses dados são sintéticos, criados para representar situações hipotéticas dos estudantes. Em uma investigação real, seriam necessários dados coletados dos sistemas acadêmicos da instituição, com informações reais sobre frequência, desempenho, entrega de atividades e situação de matrícula.**
 
 ### 4. Abordagem e algoritmo
 
-- Classificação, regressão ou outra formulação, com justificativa: **PREENCHER**
-- Algoritmo introdutório escolhido: **PREENCHER**
-- Referência simples: **PREENCHER**
+- Classificação, regressão ou outra formulação, com justificativa: ** Classificação, pois o objetivo é identificar se o estudante apresenta situação de possível saida do curso**
+- Algoritmo introdutório escolhido: **Árvore de Decisão, pois é simples de compreender e permite identificar padrões relacionados à frequência, notas e entrega de atividades.**
+- Referência simples: **a classificação pela classe mais frequente como modelo de comparação**
 
 ### 5. Avaliação
 
-- Preparação, divisão e validação: **PREENCHER**
-- Métricas e razão da escolha: **PREENCHER**
-- Resultados efetivamente calculados e link da evidência: **PREENCHER**
-- Erros relevantes e consequências: **PREENCHER**
+- Preparação, divisão e validação: **Organizar os dados, verificar informações ausentes e duplicadas, separar os dados de treinamento e teste e utilizar somente informações disponíveis até a quarta semana do semestre para realizar as previsões.**
+- Métricas e razão da escolha: **Acurácia mede a porcentagem de previsões corretas realizadas pelo modelo.
+Recall mede quantos estudantes que realmente evadiram foram identificados corretamente pelo modelo. Essa métrica é importante para evitar deixar de identificar estudantes que precisam de apoio.**
+- Resultados efetivamente calculados e link da evidência: **Serão apresentados após a execução do algoritmo com os dados sintéticos.**
+- Erros relevantes e consequências: **O modelo pode não identificar alguns estudantes que realmente irão sair ou sinalizar estudantes que permanecerão no curso. Por isso, os resultados devem ser analisados pela equipe acadêmica, sem decisões automáticas.**
 
 ### 6. Limites e proteção
 
-- Por que os resultados não demonstram causalidade? **PREENCHER**
-- Por que dados sintéticos não validam uso institucional? **PREENCHER**
-- Que grupos podem ser mal representados? Como investigar isso com evidências apropriadas? **PREENCHER**
-- Como minimizar dados, restringir acesso e definir retenção? **PREENCHER**
-- Como garantir revisão humana e contestação? **PREENCHER**
+- Por que os resultados não demonstram causalidade? ** Porque frequência, notas e entrega de atividades podem estar relacionadas à saida, mas não significam que sejam as causas do abandono. Existem outros fatores, como problemas financeiros, pessoais e familiares, que também podem influenciar.**
+- Por que dados sintéticos não validam uso institucional? **Porque são dados criados artificialmente e não representam necessariamente a realidade dos estudantes. Eles servem para testar o funcionamento do algoritmo, mas não garantem resultados corretos em uma instituição real.**
+- Que grupos podem ser mal representados? Como investigar isso com evidências apropriadas? **Estudantes que trabalham, possuem dificuldades financeiras ou têm acesso limitado à internet podem ser mal representados. Para investigar isso, seria necessário considerar relatos dos próprios estudantes.**
+- Como minimizar dados, restringir acesso e definir retenção? **Utilizar somente os dados necessários, substituir nomes por códigos, permitir acesso apenas às pessoas autorizadas e excluir os dados quando não forem mais necessários para o projeto.**
+- Como garantir revisão humana e contestação? **As previsões do modelo devem servir apenas como alertas. A equipe acadêmica deverá analisar cada situação individualmente, conversar com o estudante e permitir que ele corrija informações incorretas ou apresente sua situação.**
 
 ### 7. Recomendações de apoio
 
-- Ação voluntária proposta: **PREENCHER**
-- Como acolher estudantes não sinalizados pelo modelo: **PREENCHER**
-- O que precisa ser verificado antes de aplicação real: **PREENCHER**
+- Ação voluntária proposta: ** Oferecer acompanhamento acadêmico, monitoria, orientação individual e apoio aos estudantes que apresentarem dificuldades durante o semestre.**
+- Como acolher estudantes não sinalizados pelo modelo: **Manter canais de atendimento disponíveis para todos os estudantes, permitindo que qualquer um solicite ajuda, mesmo que não tenha sido identificado pelo algoritmo como possível caso de evasão.**
+- O que precisa ser verificado antes de aplicação real: **Verificar a qualidade dos dados, o funcionamento do algoritmo, a precisão das previsões, possíveis erros e preconceitos nos resultados, além de garantir a privacidade dos estudantes e a autorização da instituição.**
 
 Previsões não são certezas. Priorize apoio e revisão humana, sem punições ou decisões automáticas prejudiciais.
 
@@ -77,15 +78,15 @@ Previsões não são certezas. Priorize apoio e revisão humana, sem punições 
 
 | Tempo | Conteúdo | Responsável |
 | --- | --- | --- |
-| 1 minuto | Problema e dados | PREENCHER |
-| 2 minutos | Método e resultados | PREENCHER |
-| 1 minuto | Limitações | PREENCHER |
-| 1 minuto | Recomendações de apoio | PREENCHER |
+| 1 minuto | Problema e dados | Lucas Dias |
+| 2 minutos | Método e resultados | Lucas Dias |
+| 1 minuto | Limitações | Lucas Dias |
+| 1 minuto | Recomendações de apoio | Lucas Dias |
 
 ## Contribuições
 
 | Integrante | Contribuição verificável |
 | --- | --- |
-| PREENCHER | PREENCHER |
+| Lucas Dias | Preenchimento de todo o trabalho |
 
 [Voltar ao início](README.md).
