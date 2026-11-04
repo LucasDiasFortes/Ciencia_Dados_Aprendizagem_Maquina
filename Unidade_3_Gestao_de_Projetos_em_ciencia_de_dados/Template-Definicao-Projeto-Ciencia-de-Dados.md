@@ -260,8 +260,8 @@ Antes da entrega, confirme:
 
 | Responsável | Validação / observação | Data |
 |---|---|---|
-| Representante da equipe | | |
-| Professor(a) / orientador(a) | | |
+| Representante da equipe | Lucas Dias| 20/10/26 |
+| Professor(a) / orientador(a) | Khadidja | |
 
 ### Ajustes solicitados após a apresentação inicial
 
