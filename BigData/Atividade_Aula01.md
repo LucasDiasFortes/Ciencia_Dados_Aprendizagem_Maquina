@@ -376,18 +376,18 @@ Organizem a apresentação seguindo esta estrutura:
 
 Antes de entregar, confira:
 
-* [ ] Definimos um problema real.
-* [ ] Identificamos quem é afetado pelo problema.
-* [ ] Explicamos por que o problema é importante.
-* [ ] Identificamos pelo menos 5 dados necessários.
-* [ ] Definimos perguntas que queremos responder.
-* [ ] Identificamos possíveis padrões.
-* [ ] Indicamos como os dados poderiam ser analisados.
-* [ ] Definimos uma possível decisão.
-* [ ] Identificamos o benefício esperado.
-* [ ] Analisamos os 5 Vs do Big Data.
-* [ ] Preenchemos o Mapa do Problema.
-* [ ] Estamos preparados para apresentar em 2 minutos.
+* [X ] Definimos um problema real.
+* [X ] Identificamos quem é afetado pelo problema.
+* [ X] Explicamos por que o problema é importante.
+* [ X] Identificamos pelo menos 5 dados necessários.
+* [ X] Definimos perguntas que queremos responder.
+* [ X] Identificamos possíveis padrões.
+* [ X] Indicamos como os dados poderiam ser analisados.
+* [ X] Definimos uma possível decisão.
+* [ X] Identificamos o benefício esperado.
+* [ X] Analisamos os 5 Vs do Big Data.
+* [ X] Preenchemos o Mapa do Problema.
+* [] Estamos preparados para apresentar em 2 minutos.
 
 ---
 
