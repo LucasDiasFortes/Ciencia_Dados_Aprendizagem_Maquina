@@ -15,8 +15,8 @@
 | ----------------- | -------- |
 | **Turma:**        | Sistemas de Informação         |
 | **Data:**         |  19/08        |
-| **Equipe:**       |          |
-| **Integrante 1:** |          |
+| **Equipe:**       |    Sistema de informação      |
+| **Integrante 1:** |     Lucas Dias Fortes de Andrade     |
 | **Integrante 2:** |          |
 | **Integrante 3:** |          |
 | **Integrante 4:** |          |
