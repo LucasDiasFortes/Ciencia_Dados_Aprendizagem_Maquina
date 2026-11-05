@@ -53,8 +53,7 @@ Os casos são cenários didáticos. Escolha **pelo menos cinco** e justifique su
 | Caso escolhido | Alvo ou ausência de alvo | Categoria, quantidade ou grupos? | Abordagem e justificativa | Dados necessários e limitação |
 | --- | --- | --- | --- | --- |
 | Educação | Alvo | Categoria | Supervisionado — classificação, pois aprende com históricos de alunos cujo resultado já é conhecido. | Históricos rotulados de alunos. A qualidade depende dos dados e pode haver mudanças no perfil dos estudantes. |
-| Saúde | Alvo: tempo de espera em minutos | Quantidade | 	
-Supervisionado — regressão, pois prevê um valor numérico com base nos registros de atendimento | Dados de atendimentos anteriores com tempos registrados. A espera pode variar conforme a demanda e a equipe disponível |
+| Saúde | Alvo: tempo de espera em minutos | Quantidade | Supervisionado — regressão, pois prevê um valor numérico com base nos registros de atendimento | Dados de atendimentos anteriores com tempos registrados. A espera pode variar conforme a demanda e a equipe disponível |
 | Comércio | Ausência de alvo: não existem categorias prévias de clientes | Grupos | Não supervisionado — agrupamento, pois identifica perfis de compra semelhantes sem rótulos definidos | Histórico de compras dos clientes. Os grupos encontrados podem não ser úteis para todas as decisões comerciais |
 | Finanças | Alvo: inadimplente ou adimplente | Categoria | Supervisionado — classificação, pois utiliza contratos com desfechos conhecidos para classificar novos contratos | Dados de contratos anteriores e seus resultados. Dados desatualizados ou enviesados podem prejudicar as previsões |
 | Comércio | Alvo: total de vendas em reais na próxima semana | Quantidade | Supervisionado — regressão, pois estima um valor numérico de vendas a partir de dados históricos | Registros de vendas anteriores. Promoções, sazonalidade e mudanças no mercado podem reduzir a precisão |
