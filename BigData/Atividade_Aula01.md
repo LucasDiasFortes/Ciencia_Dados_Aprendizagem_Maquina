@@ -49,13 +49,13 @@ Escolha uma área para investigar:
 * [ ] Indústria
 * [ ] Meio ambiente
 * [ ] Esportes
-* [ ] Outra: __________________________
+* [ ] Outra: __Curso online________________________
 
 ### Problema escolhido
 
 **Descreva, em poucas linhas, o problema que sua equipe pretende analisar.**
 
-> Escreva aqui:
+> Escreva aqui: Atualmente, plataformas de cursos online possuem dificuldades para identificar em qual etapa do curso os alunos costumam perder o interesse e parar de estudar.
 >
 > ---
 >
@@ -72,13 +72,13 @@ Identifique a organização, grupo ou público afetado pelo problema.
 **Quem possui ou enfrenta esse problema?**
 
 > ---
->
+> Plataformas de ensino online, instituições de ensino, empresas de educação a distância e produtores de cursos digitais.
 > ---
 
 ### Quem é afetado pelo problema?
 
 > ---
->
+> Alunos, Professores e a Plataforma
 > ---
 
 ---
@@ -90,7 +90,7 @@ Explique por que vale a pena investigar esse problema utilizando dados.
 **Qual é o impacto do problema?**
 
 > ---
->
+> Esse problema é importante porque muitos alunos começam cursos online, mas não conseguem chegar até o final. Sem identificar onde acontecem as desistências, as instituições podem ter dificuldades para melhorar o conteúdo e a experiência de aprendizagem.
 > ---
 >
 > ---
@@ -104,7 +104,7 @@ Imagine que sua equipe foi contratada para ajudar uma organização.
 **Qual decisão a organização precisa tomar?**
 
 > ---
->
+> A plataforma precisa decidir quais etapas do curso devem ser melhoradas e quais ações podem ser implementadas para evitar que os alunos desistam, como modificar conteúdos, melhorar explicações, adicionar exercícios ou oferecer acompanhamento.
 > ---
 >
 > ---
@@ -121,11 +121,11 @@ Liste pelo menos **5 dados**.
 
 | Nº | Dado necessário | Por que esse dado é importante? |
 | -: | --------------- | ------------------------------- |
-|  1 |                 |                                 |
-|  2 |                 |                                 |
-|  3 |                 |                                 |
-|  4 |                 |                                 |
-|  5 |                 |                                 |
+|  1 |    Etapa ou módulo do curso             |   Identificar em qual etapa ocorre mais desistência.                              |
+|  2 |   Tempo de permanência em cada módulo              | Descobrir se os alunos demoram ou perdem interesse em determinadas etapas.                                |
+|  3 |  Frequência de acesso à plataforma               |    Identificar alunos que estão deixando de acessar o curso.                             |
+|  4 |  Percentual de conclusão das aulas               |    Verificar até onde os alunos conseguem avançar.                             |
+|  5 |    Avaliações dos alunos sobre as aulas             |   Identificar possíveis problemas com o conteúdo ou a metodologia.                              |
 
 ### Exemplos
 
@@ -155,19 +155,19 @@ Os dados, quando analisados, podem gerar informações úteis.
 
 ### Pergunta 1
 
-> ---
+> --- Em qual módulo ou etapa do curso acontece a maior quantidade de desistências?
 
 ### Pergunta 2
 
-> ---
+> --- Quanto tempo, em média, os alunos permanecem estudando antes de abandonar o curso?
 
 ### Pergunta 3
 
-> ---
+> --- Alunos que acessam a plataforma com menos frequência apresentam maior tendência de desistência?
 
 ### Pergunta 4
 
-> ---
+> --- Existe alguma relação entre notas baixas, dificuldade nas atividades e abandono do curso?
 
 ---
 
@@ -177,13 +177,13 @@ Pense como um cientista de dados.
 
 Sua equipe poderia procurar:
 
-* [ ] Tendências
-* [ ] Comparações
+* [ X] Tendências
+* [ X] Comparações
 * [ ] Grupos semelhantes
-* [ ] Comportamentos recorrentes
-* [ ] Valores fora do padrão
+* [ X] Comportamentos recorrentes
+* [ X] Valores fora do padrão
 * [ ] Relações entre variáveis
-* [ ] Mudanças ao longo do tempo
+* [ X] Mudanças ao longo do tempo
 * [ ] Outros: __________________________
 
 ### Explique um padrão que vocês gostariam de encontrar
@@ -202,20 +202,20 @@ Como os dados poderiam ser analisados?
 
 Marque uma ou mais possibilidades:
 
-* [ ] Análise descritiva
-* [ ] Comparação entre grupos
-* [ ] Análise temporal
-* [ ] Visualização por gráficos
-* [ ] Identificação de padrões
-* [ ] Classificação
-* [ ] Previsão
+* [ X] Análise descritiva
+* [ X] Comparação entre grupos
+* [X ] Análise temporal
+* [ X] Visualização por gráficos
+* [X ] Identificação de padrões
+* [ X] Classificação
+* [ X] Previsão
 * [ ] Agrupamento
 * [ ] Outra: __________________________
 
 ### Explique
 
 > ---
->
+> Seriam analisados os registros de utilização da plataforma, comparando a quantidade de alunos que iniciaram e concluíram cada módulo.
 > ---
 
 ---
@@ -227,7 +227,7 @@ Depois de analisar os dados, imagine que sua equipe encontrou informações impo
 **Que decisão poderia ser tomada com base nos resultados?**
 
 > ---
->
+> Com base nos resultados, a instituição poderia priorizar melhorias nos módulos com maior índice de abandono, revisar conteúdos que apresentam dificuldades e implementar notificações, lembretes ou acompanhamento personalizado para alunos que estão deixando de acessar a plataforma.
 > ---
 >
 > ---
@@ -239,7 +239,7 @@ Depois de analisar os dados, imagine que sua equipe encontrou informações impo
 Qual seria o possível benefício da decisão para a organização ou para as pessoas envolvidas?
 
 > ---
->
+> Aumentar a taxa de conclusão dos cursos, reduzir a desistência dos alunos, melhorar a qualidade dos conteúdos e identificar dificuldades de aprendizagem.
 > ---
 >
 > ---
@@ -252,15 +252,15 @@ Analise o problema escolhido pela equipe.
 
 | V              | Pergunta                                                   | Resposta da equipe |
 | -------------- | ---------------------------------------------------------- | ------------------ |
-| **Volume**     | Existe uma grande quantidade de dados?                     |                    |
-| **Velocidade** | Os dados são gerados ou processados rapidamente?           |                    |
-| **Variedade**  | Existem diferentes tipos ou formatos de dados?             |                    |
-| **Veracidade** | Os dados podem apresentar erros ou problemas de qualidade? |                    |
-| **Valor**      | Os dados podem gerar algum benefício ou apoiar decisões?   |                    |
+| **Volume**     | Existe uma grande quantidade de dados?                     |  Sim. Uma plataforma pode possuir milhares de alunos, aulas, acessos e atividades registradas.                  |
+| **Velocidade** | Os dados são gerados ou processados rapidamente?           |  Sim. Os dados são gerados continuamente conforme os alunos acessam e utilizam a plataforma.                 |
+| **Variedade**  | Existem diferentes tipos ou formatos de dados?             |  Sim. Existem dados numéricos, textos, avaliações, registros de acesso e respostas de atividades.                  |
+| **Veracidade** | Os dados podem apresentar erros ou problemas de qualidade? | Sim. Podem existir registros incompletos, acessos duplicados ou alunos que assistem às aulas sem registrar corretamente seu progresso.                   |
+| **Valor**      | Os dados podem gerar algum benefício ou apoiar decisões?   |  Sim. Podem ajudar a identificar etapas problemáticas e melhorar a retenção dos alunos.                  |
 
 ### Qual dos 5 Vs é mais relevante para o problema?
 
-> ---
+> --- O Valor é o mais relevante, pois o objetivo principal é transformar os dados coletados pela plataforma em informações úteis para identificar os motivos das desistências e melhorar a experiência dos alunos.
 
 ### Justifique
 
@@ -277,37 +277,37 @@ Complete o fluxo abaixo:
 ```text
 ┌─────────────────────┐
 │       PROBLEMA      │
-│                     │
+│    Dificuldade em identificar em qual etapa dos cursos online acontece a maior desistência dos alunos.                 │
 │                     │
 └──────────┬──────────┘
            ↓
 ┌─────────────────────┐
 │        DADOS        │
-│                     │
+│   Módulos acessados, tempo de estudo, frequência, notas, progresso e histórico de abandono.                  │
 │                     │
 └──────────┬──────────┘
            ↓
 ┌─────────────────────┐
 │     INFORMAÇÕES     │
-│                     │
+│   Descobrir em quais módulos ocorre maior desistência e quais comportamentos estão relacionados a ela.                  │
 │                     │
 └──────────┬──────────┘
            ↓
 ┌─────────────────────┐
 │       ANÁLISE       │
-│                     │
+│    Comparação de módulos, taxas de abandono, frequência de acesso e desempenho dos alunos.                 │
 │                     │
 └──────────┬──────────┘
            ↓
 ┌─────────────────────┐
 │       DECISÃO       │
-│                     │
+│  Melhorar os módulos problemáticos e criar estratégias para incentivar a continuidade dos estudos.                   │
 │                     │
 └──────────┬──────────┘
            ↓
 ┌─────────────────────┐
 │      BENEFÍCIO      │
-│                     │
+│   Redução da evasão, maior conclusão dos cursos e melhor experiência de aprendizagem.                  │
 │                     │
 └─────────────────────┘
 ```
