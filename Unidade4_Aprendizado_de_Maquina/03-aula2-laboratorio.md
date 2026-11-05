@@ -77,6 +77,9 @@ Não invente valores. Se sua ferramenta não produziu uma medida, registre “n�
 - Consequências dos falsos negativos: **Falsos negativos (21): estudantes que evadiram sem serem identificados. É o erro mais grave aqui, porque eles não recebem apoio a tempo. Com 21 FN contra 28 TP, o modelo deixa passar cerca de 43% dos evadidos.**
 - Interpretação do gráfico e da árvore: **A raiz da árvore usa nota_sem4 <= 6,207, indicando que a nota da semana 4 foi o atributo que mais separou evasão de permanência no treino. Notas baixas combinadas com frequência baixa (≤ 64,4%) e poucas entregas (≤ 3,5) formam a folha de maior risco (54 de 61 evadidos). Notas altas com frequência alta formam o grupo mais seguro (84 de 84 permaneceram). A folha de nota baixa com frequência alta é mista (87 e 58), o que explica parte dos falsos negativos.**
 
+![Árvore de decisão](assets/arvore.png)
+
+
 ## 5. Experimentos no treino
 
 Compare parâmetros usando apenas treino/validação. Após conhecer o teste, uma nova seleção exige novo teste independente para avaliação final.
