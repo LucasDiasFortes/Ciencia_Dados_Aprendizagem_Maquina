@@ -77,7 +77,6 @@ Não invente valores. Se sua ferramenta não produziu uma medida, registre “n�
 - Consequências dos falsos negativos: **Falsos negativos (21): estudantes que evadiram sem serem identificados. É o erro mais grave aqui, porque eles não recebem apoio a tempo. Com 21 FN contra 28 TP, o modelo deixa passar cerca de 43% dos evadidos.**
 - Interpretação do gráfico e da árvore: **A raiz da árvore usa nota_sem4 <= 6,207, indicando que a nota da semana 4 foi o atributo que mais separou evasão de permanência no treino. Notas baixas combinadas com frequência baixa (≤ 64,4%) e poucas entregas (≤ 3,5) formam a folha de maior risco (54 de 61 evadidos). Notas altas com frequência alta formam o grupo mais seguro (84 de 84 permaneceram). A folha de nota baixa com frequência alta é mista (87 e 58), o que explica parte dos falsos negativos.**
 
-![Árvore de decisão](assets/arvore.png)
 
 
 ## 5. Experimentos no treino
@@ -86,14 +85,14 @@ Compare parâmetros usando apenas treino/validação. Após conhecer o teste, um
 
 | Experimento | Alteração | Resultado de validação | Interpretação |
 | --- | --- | --- | --- |
-| 1 | PREENCHER | PREENCHER | PREENCHER |
-| 2 | PREENCHER | PREENCHER | PREENCHER |
+| 1 | max_depth de 3 para None (sem limite)| 0,702 ± 0,028 → 0,710 ± 0,046 | Ganho de 0,008, menor que o desvio entre folds, então não é diferença confiável. O desvio aumentou, sinal de instabilidade da árvore profunda. |
+| 2 | max_depth de 3 para 5 | 0,702 ± 0,028 → 0,677 ± 0,029 | Piora na validação. Mais profundidade não trouxe ganho e tende a ajustar ruído do treino. |
 
 Responda:
 
-1. Como a profundidade e o tamanho das folhas podem afetar o sobreajuste? **PREENCHER**
-2. Retirar um atributo e observar mudança no desempenho prova causalidade? **PREENCHER**
-3. Se 95% permanecem, o que acontece com um modelo que sempre prevê permanência? **PREENCHER**
+1. Como a profundidade e o tamanho das folhas podem afetar o sobreajuste? **Árvores profundas ou com folhas muito pequenas memorizam ruído do treino: a acurácia de treino sobe, mas a de validação não acompanha. Limitar max_depth ou aumentar min_samples_leaf simplifica a árvore e melhora a generalização, com o risco de subajuste se o limite for exagerado. Nos meus experimentos, max_depth=5 e None não superaram max_depth=3 de forma convincente.**
+2. Retirar um atributo e observar mudança no desempenho prova causalidade? **Não. A mudança mostra que o atributo ajuda a prever neste conjunto, mas não que causa a evasão.**
+3. Se 95% permanecem, o que acontece com um modelo que sempre prevê permanência? **Teria cerca de 95% de acurácia, mas sensibilidade 0 para a classe 1: erraria todos os evadidos (todos seriam falsos negativos). A acurácia engana quando as classes são desbalanceadas, por isso é preciso olhar a matriz de confusão e a sensibilidade.**
 
 ## 6. Regressão — seção independente
 
@@ -101,24 +100,26 @@ Execute a seção da biblioteca no notebook ou registre o procedimento equivalen
 
 | Item | Registro |
 | --- | --- |
-| Atributos e alvo | PREENCHER |
-| Divisão e preparação | PREENCHER |
-| MAE do modelo e unidade | PREENCHER |
-| MAE da referência | PREENCHER |
-| R² do teste | PREENCHER |
-| Interpretação do gráfico observado/previsto | PREENCHER |
-| Interpretação dos resíduos | PREENCHER |
-| Limitação de extrapolação | PREENCHER |
+| Atributos e alvo | usuarios_ativos e horas_abertura. Alvo numérico: emprestimos_semana. Dados sintéticos, gerados no notebook com semente 42 (300 registros).|
+| Divisão e preparação | 75% treino e 25% teste (225 e 75), random_state=42, divisão aleatória porque os registros simulados são independentes. Pipeline com imputação pela mediana e LinearRegression. Não há ausências nesses dados. |
+| MAE do modelo e unidade | 28,59 empréstimos por semana |
+| MAE da referência | 84,73 empréstimos por semana (prever a média do treino)|
+| R² do teste | 0,8774 |
+| Interpretação do gráfico observado/previsto | Os pontos se concentram em torno da linha tracejada (previsão igual ao observado), sem curvatura sistemática, e há dispersão moderada, compatível com o MAE de 28,59 e o R² de 0,877. O modelo capta bem a tendência geral, mas não prevê cada semana com exatidão|
+| Interpretação dos resíduos | Os pontos se concentram em torno da linha tracejada (previsão igual ao observado), sem curvatura sistemática, e há dispersão moderada, compatível com o MAE de 28,59 e o R² de 0,877. O modelo capta bem a tendência geral, mas não prevê cada semana com exatidão. |
+| Limitação de extrapolação | O modelo só foi treinado com 100 a 1000 usuários ativos e 20 a 60 horas de abertura. Prever fora dessas faixas (por exemplo, 10.000 usuários) extrapola além do domínio simulado, e a relação linear pode não valer ali. |
 
-Explique por que R² não é porcentagem de acertos: **PREENCHER**
+Explique por que R² não é porcentagem de acertos: **O R² compara o erro quadrático do modelo com o de simplesmente prever a média. Vale 1 no ajuste perfeito, 0 quando equivale à média e pode ser negativo. Como o alvo é contínuo, quase nenhuma previsão é exatamente igual ao observado, então não faz sentido contar acertos. Aqui, R² = 0,877 significa que o modelo explica cerca de 88% da variação dos empréstimos no teste, e não que acerta 88% das previsões.+**
 
 ## 7. Evidências e conclusão
 
-- Link relativo do notebook/fluxo: **PREENCHER**
-- Links das imagens, se houver: **PREENCHER**
-- Principal aprendizado: **PREENCHER**
-- Limitações de generalização e vieses possíveis: **PREENCHER**
-- Cuidados com privacidade e uso responsável: **PREENCHER**
+- Link relativo do notebook/fluxo: **[laboratorio.ipynb](notebooks/laboratorio.ipynb)**
+- Links das imagens, se houver: **![Árvore de decisão](assets/arvore.png)
+![Regressão: observado e previsto](assets/regressao_obs_prev.png)
+![Regressão: resíduos](assets/regressao_residuos.png)**
+- Principal aprendizado: **Aprendi que a escolha de parâmetros deve usar só validação cruzada no treino, deixando o teste para uma única avaliação final. A árvore (max_depth=3) superou a referência (0,733 contra 0,592 no teste), mas identificou só 57% dos evadidos, então a acurácia sozinha não basta e é preciso olhar a matriz de confusão. Na regressão, o MAE (28,59 contra 84,73 da referência) e o R² (0,877) mostraram bom ajuste, e R² não é porcentagem de acertos.**
+- Limitações de generalização e vieses possíveis: **Os dados são sintéticos e as associações foram definidas pela simulação, então os resultados não valem para estudantes reais. Há uma única divisão treino/teste (120 registros na classificação, 75 na regressão), e outra divisão poderia dar números diferentes. Em dados reais, poderia haver viés de amostragem e desigualdade entre grupos, que este conjunto não permite avaliar. A regressão não deve ser usada para extrapolar além das faixas simuladas.**
+- Cuidados com privacidade e uso responsável: **Em uso real, dados de estudantes exigem acesso restrito, prazo de retenção definido, consentimento e auditoria por grupos. O modelo só deve orientar apoio voluntário, revisado por pessoas, nunca decisões automáticas ou punitivas, e deve permitir contestação. Neste trabalho foram usados apenas dados sintéticos.**
 
 Para inserir uma imagem salva, use `![Matriz de confusão](assets/minha-matriz.png)` e confira se o arquivo existe. Mostre apenas dados sintéticos.
 
