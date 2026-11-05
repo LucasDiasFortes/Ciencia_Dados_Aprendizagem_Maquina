@@ -16,7 +16,7 @@ Responda com suas palavras e apresente os cálculos quando solicitados. Os núme
 
 ## 1. Explique a diferença entre regra programada para bloquear uma palavra e modelo de spam treinado com exemplos.
 
-**Resposta:** PREENCHER
+**Resposta:** No boquear uma palavra é por ume pessoa que escreve o que quer que seja bloqueado, já o spam aprende com exemplos de mensagens classificadas como spam
 
 ## 2. Por que codificar evadiu/permaneceu como 1/0 não transforma classificação em regressão?
 
